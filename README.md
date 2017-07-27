@@ -5,7 +5,7 @@
 #### How to
 ```python
     client = Client("localhost")
-    result = client.query_elastic("index_name", "doc_type", [["_source", "field1"], ["_source", "field2"]])
+    result = client.query_elastic("index_name", "doc_type", ["_source.field1", "_source.field2"])
     print(result)
 ```
 result:
